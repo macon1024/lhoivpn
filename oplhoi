@@ -161,7 +161,7 @@ systemctl start openvpn@server
 mkdir -p /home/vps/public_html
 cat > /home/vps/public_html/client.ovpn <<-END
 
-# Created by wang zki
+# Created by lhoi
 auth-user-pass
 client
 dev tun
@@ -186,8 +186,8 @@ cipher none
 auth none
 http-proxy $MYIP 8080
 http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.1
-http-proxy-option CUSTOM-HEADER Host weixin.qq.cn
-http-proxy-option CUSTOM-HEADER X-Forward-Host weixin.qq.cn
+http-proxy-option CUSTOM-HEADER Host www.viber.com.edgekey.net
+http-proxy-option CUSTOM-HEADER X-Forward-Host www.viber.com.edgekey.net
 http-proxy-option CUSTOM-HEADER Connection: Keep-Alive
 http-proxy-option CUSTOM-HEADER Proxy-Connection: keep-alive
 END
@@ -378,8 +378,8 @@ echo "DEVICE WILL REBOOT IN 10 SECONDS"
 echo "PLEASE WAIT PATIENTLY AND RELOGIN TO YOUR VPS"
 echo " "
 echo "--------------------------- Configuration Setup Server -------------------------"
-echo "                         Copyright HostingTermurah.net                          "
-echo "                                Modified by wangzki                        "
+echo "                         Copyright www.lhoivpn.tech                          "
+echo "                                Modified by lhoi                        "
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Information"  | tee -a log-install.txt
